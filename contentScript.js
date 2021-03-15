@@ -10,14 +10,13 @@ window.setInterval(function(){
 			var buttonAdded = item.getElementsByTagName('button')[0];
 			if (!buttonAdded) {
 				var button = document.createElement("button");
-				button.innerHTML = "Copy Checklist";
+				button.innerHTML = "Copy";
 				item.appendChild(button);
 
-				button.addEventListener ("click", function() {
-					  copyToClipboard(Array.from(checklist.getElementsByClassName('checklist-item')).map(function(checklistItem) {
-
-				  		newItem = checklistItem.innerText;
-					  
+				button.addEventListener ("click", function(event) {
+					event.stopPropagation();
+					copyToClipboard(Array.from(checklist.getElementsByClassName('checklist-item')).map(function(checklistItem) {
+						newItem = checklistItem.innerText;
 					  	return newItem;
 					}).join("\n"));
 				});
