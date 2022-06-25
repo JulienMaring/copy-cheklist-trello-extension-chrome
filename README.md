@@ -14,10 +14,7 @@
  
   ![Alt text](./docs/images/checklist1.png)
   
-- click on the button and you'll see a window that allows you to copy all the checklist into your clipboard
- 
-  ![Alt text](./docs/images/copy-window.png)
-  
-- On this window : Ctrl + C, Enter 
+- click on the button and the text will automatically be copied to your clipboard
+
 - Paste on another checklist 
 
