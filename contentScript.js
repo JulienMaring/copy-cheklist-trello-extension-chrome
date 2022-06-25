@@ -1,5 +1,5 @@
 function copyToClipboard(text) {
-    window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+	navigator.clipboard.writeText(text);
   }
 
 window.setInterval(function(){
